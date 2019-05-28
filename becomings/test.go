@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-type becomer string
+type becoming string
 
-func (b becomer) Become() {
+func (b becoming) Become() {
 	fmt.Println("Success!")
 }
 
-var Become becomer
+var Become becoming
