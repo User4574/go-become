@@ -1,0 +1,21 @@
+h1. Go Become Server
+
+p. Rest in peace, Joe.
+
+h2. Server
+
+# make
+# ./become
+
+The server will start listening on tcp://localhost:3333.
+
+h2. Client
+
+# cd becomings
+# make test.so
+# cat test.so | nc localhost 3333
+# ^C
+
+h2. Result
+
+p. The server will receive the plugin and become it.
