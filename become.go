@@ -67,22 +67,22 @@ func becomePlugin(filename string) {
 
 	plugin, err := plugin.Open(filename)
 	if err != nil {
-		fmt.Println("Error opening become: ", err.Error())
+		fmt.Println("Error opening becoming: ", err.Error())
 		return
 	}
 
-	symBecome, err := plugin.Lookup("Become")
+	symBecoming, err := plugin.Lookup("Become")
 	if err != nil {
-		fmt.Println("Error looking up become: ", err.Error())
+		fmt.Println("Error looking up becoming: ", err.Error())
 		return
 	}
 
-	var become Become
-	become, ok := symBecome.(Become)
+	var becoming Become
+	becoming, ok := symBecoming.(Become)
 	if !ok {
-		fmt.Println("Become not of correct type")
+		fmt.Println("Becoming not of correct type")
 		return
 	}
 
-	become.Become()
+	becoming.Become()
 }
